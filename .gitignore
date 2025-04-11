@@ -1,0 +1,55 @@
+# Environment variables and configuration
+.env
+includes/env_loader.php
+
+# Vendor directories
+/vendor/
+/node_modules/
+
+# User uploaded content
+/uploads/
+
+# Cache and temporary files
+/temp/
+/cache/
+*.tmp
+*.cache
+*.log
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Sensitive information
+api_keys.txt
+credentials.json

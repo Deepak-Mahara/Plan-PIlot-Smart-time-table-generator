@@ -1,0 +1,121 @@
+/* Custom styles for Smart Timetable Generator */
+
+/* Timetable grid styling */
+.timetable-grid {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.timetable-grid th, 
+.timetable-grid td {
+    border: 1px solid #e2e8f0;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.timetable-grid th {
+    background-color: #f8fafc;
+}
+
+.dark .timetable-grid th {
+    background-color: #334155;
+    border-color: #475569;
+}
+
+.dark .timetable-grid td {
+    border-color: #475569;
+}
+
+/* Course blocks in timetable */
+.course-block {
+    padding: 8px 4px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    margin-bottom: 2px;
+}
+
+/* Different colors for different courses */
+.course-color-1 { background-color: #bfdbfe; color: #1e3a8a; }
+.course-color-2 { background-color: #bbf7d0; color: #14532d; }
+.course-color-3 { background-color: #fecaca; color: #7f1d1d; }
+.course-color-4 { background-color: #fed7aa; color: #7c2d12; }
+.course-color-5 { background-color: #d8b4fe; color: #581c87; }
+.course-color-6 { background-color: #c4b5fd; color: #4c1d95; }
+.course-color-7 { background-color: #bae6fd; color: #0c4a6e; }
+.course-color-8 { background-color: #fef3c7; color: #78350f; }
+
+/* Dark mode course colors */
+.dark .course-color-1 { background-color: #1e3a8a; color: #bfdbfe; }
+.dark .course-color-2 { background-color: #14532d; color: #bbf7d0; }
+.dark .course-color-3 { background-color: #7f1d1d; color: #fecaca; }
+.dark .course-color-4 { background-color: #7c2d12; color: #fed7aa; }
+.dark .course-color-5 { background-color: #581c87; color: #d8b4fe; }
+.dark .course-color-6 { background-color: #4c1d95; color: #c4b5fd; }
+.dark .course-color-7 { background-color: #0c4a6e; color: #bae6fd; }
+.dark .course-color-8 { background-color: #78350f; color: #fef3c7; }
+
+/* Conflict warning styling */
+.conflict-warning {
+    background-color: #fee2e2 !important;
+    border: 2px solid #ef4444 !important;
+    position: relative;
+}
+
+.dark .conflict-warning {
+    background-color: #7f1d1d !important;
+    border: 2px solid #f87171 !important;
+}
+
+/* Loading animation */
+.loading-spinner {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(75, 85, 99, 0.2);
+    border-radius: 50%;
+    border-top-color: #3b82f6;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    .timetable-grid th, 
+    .timetable-grid td {
+        border-color: #000 !important;
+    }
+    
+    #timetable-actions,
+    header button,
+    form {
+        display: none !important;
+    }
+    
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+    }
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 640px) {
+    .timetable-grid th,
+    .timetable-grid td {
+        padding: 5px 2px;
+        font-size: 0.75rem;
+    }
+    
+    .course-block {
+        padding: 4px 2px;
+        font-size: 0.7rem;
+    }
+}
