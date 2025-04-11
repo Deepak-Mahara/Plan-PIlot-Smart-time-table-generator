@@ -1,1 +1,1 @@
-# Plan-PIlot-Samrt-time-table-generator
+# Plan-PIlot-Smart-time-table-generator
