@@ -20,7 +20,7 @@ PlanPilot is an academic timetable planning system that helps students organize 
 ## Installation
 1. Clone the repository to your web server's document root:
    ```
-   git clone https://github.com/yourusername/plan-pilot.git
+   git clone https://github.com/Rajathraj12/Plan-PIlot-Smart-time-table-generator.git
    ```
 
 2. Ensure your web server (Apache, Nginx, etc.) is configured correctly.
@@ -31,7 +31,7 @@ PlanPilot is an academic timetable planning system that helps students organize 
 
 4. Open the application in your browser:
    ```
-   http://localhost/plan-pilot/
+   http://localhost/Plan-PIlot-Smart-time-table-generator/
    ```
 
 ## Usage
