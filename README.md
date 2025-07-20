@@ -48,12 +48,10 @@ PlanPilot is an academic timetable planning system that helps students organize 
 - `/dompdf-2.0.3` - PDF generation library
 - `/vendor` - Composer dependencies
 
-## License
-[Add your chosen license here]
 
 ## Contributors
-- [Your name]
-- [Other contributors]
+- Deepak Mahara
+- RajatKumar Kademani
 
 ## Acknowledgements
 - dompdf library for PDF generation
